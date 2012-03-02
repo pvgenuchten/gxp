@@ -87,6 +87,15 @@ gxp.plugins.WMSGetFeatureInfo = Ext.extend(gxp.plugins.Tool, {
      *      source: feature.attributes, // only for "grid" format
      *      html: text, // responseText from server - only for "html" format
      */
+	initComponent: function () {
+
+        this.addEvents(
+
+        /** api: events[render]
+            Event is triggered before rendering a feature, can be used to manipulate the feature-attributes, set a customRenderer or add geometry to the map  
+        */
+            "render");
+    },
 
     /** api: method[addActions]
      */
@@ -238,6 +247,7 @@ gxp.plugins.WMSGetFeatureInfo = Ext.extend(gxp.plugins.Tool, {
                     title: feature.fid ? feature.fid : title,
                     source: feature.attributes
                 }, this.itemConfig));
+				this.fireEvent("render", title, feature, config[i]);
             }
         } else if (text) {
             config.push(Ext.apply({

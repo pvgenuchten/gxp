@@ -37,7 +37,6 @@ GeoExt.Lang.add("nl", {
     },
 
     "gxp.plugins.GoogleEarth.prototype": {
-        apiKeyPrompt: "Geef a.u.b. de Google API key voor ",
         menuText: "3D weergave",
         tooltip: "Bekijk kaart in 3D"
     },
@@ -56,6 +55,7 @@ GeoExt.Lang.add("nl", {
     },
     
     "gxp.plugins.LayerTree.prototype": {
+        shortTitle: "Kaartlagen",
         rootNodeText: "Kaartlagen",
         overlayNodeText: "Kaart overlays",
         baseNodeText: "Basis Kaarten"
@@ -329,7 +329,7 @@ GeoExt.Lang.add("nl", {
         dataStoreEmptyText: "Standaard archief"
     },
 
-    "gxp.NewSourceWindow.prototype": {
+    "gxp.NewSourceDialog.prototype": {
         title: "Add New Server...",
         cancelText: "Cancel",
         addServerText: "Add Server",

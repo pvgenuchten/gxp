@@ -46,7 +46,6 @@ GeoExt.Lang.add("de", {
     },
 
     "gxp.plugins.GoogleEarth.prototype": {
-        apiKeyPrompt: "Bitte geben Sie den Google API Key ein für ",
         menuText: "3D Viewer",
         tooltip: "zum 3D Viewer wechseln"
     },
@@ -65,6 +64,7 @@ GeoExt.Lang.add("de", {
     },
     
     "gxp.plugins.LayerTree.prototype": {
+        shortTitle: "Layer",
         rootNodeText: "Layer",
         overlayNodeText: "überlagernde Layer",
         baseNodeText: "Basiskarten"
@@ -368,7 +368,7 @@ GeoExt.Lang.add("de", {
         dataStoreEmptyText: "Default datastore"
     },
     
-    "gxp.NewSourceWindow.prototype": {
+    "gxp.NewSourceDialog.prototype": {
         title: "neuen Server hinzufügen...",
         cancelText: "Abbrechen",
         addServerText: "Server hinzufügen",

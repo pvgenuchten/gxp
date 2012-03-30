@@ -47,7 +47,6 @@ GeoExt.Lang.add("pl", {
     },
     
     "gxp.plugins.GoogleEarth.prototype": {
-        apiKeyPrompt: "Podaj identyfikator klucza Google Earth dla swojej witryny",
         menuText: "Przeglądarka 3D",
         tooltip: "Przełącz do widoku 3D"
     },
@@ -66,6 +65,7 @@ GeoExt.Lang.add("pl", {
     },
     
     "gxp.plugins.LayerTree.prototype": {
+        shortTitle: "Mapa",
         rootNodeText: "Mapa",
         overlayNodeText: "Warstwy",
         baseNodeText: "Mapa referencyjna"
@@ -347,7 +347,7 @@ GeoExt.Lang.add("pl", {
         dataStoreEmptyText: "Domyślny magazyn danych"
     },
     
-    "gxp.NewSourceWindow.prototype": {
+    "gxp.NewSourceDialog.prototype": {
         title: "Dodaj serwer...",
         cancelText: "Anuluj",
         addServerText: "Dodaj serwer",
